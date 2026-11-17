@@ -1,71 +1,71 @@
 #EXTM3U
-#EXTINF:-1 group-title="0-9",1.FM Bombay Beats
+#EXTINF:-1 group-title="0-9" tvg-logo="https://qaatwar.github.io/bollywood-radio/cover.jpg",1.FM Bombay Beats
 http://strm112.1.fm/bombaybeats_mobile_mp3
-#EXTINF:-1 group-title="0-9",60s Forever
+#EXTINF:-1 group-title="0-9" tvg-logo="https://qaatwar.github.io/bollywood-radio/cover.jpg",60s Forever
 https://stream.zeno.fm/btrks671ynhvv
-#EXTINF:-1 group-title="A",AIR FM Gold
+#EXTINF:-1 group-title="A" tvg-logo="https://qaatwar.github.io/bollywood-radio/cover.jpg",AIR FM Gold
 https://airhlspush.pc.cdn.bitgravity.com/httppush/hlspbaudio005/hlspbaudio00564kbps.m3u8
-#EXTINF:-1 group-title="B",BIG FM 92.7
+#EXTINF:-1 group-title="B" tvg-logo="https://qaatwar.github.io/bollywood-radio/cover.jpg",BIG FM 92.7
 https://stream-151.zeno.fm/dbstwo3dvhhtv
-#EXTINF:-1 group-title="B",Bollywood Gaane Purane
+#EXTINF:-1 group-title="B" tvg-logo="https://qaatwar.github.io/bollywood-radio/cover.jpg",Bollywood Gaane Purane
 https://stream.zeno.fm/6n6ewddtad0uv
-#EXTINF:-1 group-title="B",Bollywood Sad Songs
+#EXTINF:-1 group-title="B" tvg-logo="https://qaatwar.github.io/bollywood-radio/cover.jpg",Bollywood Sad Songs
 https://stream.zeno.fm/yvqymrxdxi7vv
-#EXTINF:-1 group-title="D",Desi Hits 2000s
+#EXTINF:-1 group-title="D" tvg-logo="https://qaatwar.github.io/bollywood-radio/cover.jpg",Desi Hits 2000s
 https://www.desizoneradio.com/relay2
-#EXTINF:-1 group-title="F",Free FM Top 100 India
+#EXTINF:-1 group-title="F" tvg-logo="https://qaatwar.github.io/bollywood-radio/cover.jpg",Free FM Top 100 India
 https://stream.zeno.fm/a5h7vfret68uv
-#EXTINF:-1 group-title="G",Goldy Mukesh
+#EXTINF:-1 group-title="G" tvg-logo="https://qaatwar.github.io/bollywood-radio/cover.jpg",Goldy Mukesh
 https://stream.zeno.fm/t39watus1p8uv
-#EXTINF:-1 group-title="H",Hits of Bollywood
+#EXTINF:-1 group-title="H" tvg-logo="https://qaatwar.github.io/bollywood-radio/cover.jpg",Hits of Bollywood
 http://stream.zeno.fm/8ty8szwpwfeuv
-#EXTINF:-1 group-title="H",Hits of Mohammed Rafi
+#EXTINF:-1 group-title="H" tvg-logo="https://qaatwar.github.io/bollywood-radio/cover.jpg",Hits of Mohammed Rafi
 http://stream.zeno.fm/0zkr7x8ztm0uv
-#EXTINF:-1 group-title="K",Kumar Sanu Radio
+#EXTINF:-1 group-title="K" tvg-logo="https://qaatwar.github.io/bollywood-radio/cover.jpg",Kumar Sanu Radio
 https://stream-164.zeno.fm/shxt7qxapy8uv
-#EXTINF:-1 group-title="L",Lyca Gold
+#EXTINF:-1 group-title="L" tvg-logo="https://qaatwar.github.io/bollywood-radio/cover.jpg",Lyca Gold
 https://listen-lycaradio.sharp-stream.com/1035.mp3
-#EXTINF:-1 group-title="L",Lyca Radio
+#EXTINF:-1 group-title="L" tvg-logo="https://qaatwar.github.io/bollywood-radio/cover.jpg",Lyca Radio
 https://listen-lycaradio.sharp-stream.com/1458.mp3
-#EXTINF:-1 group-title="M",Mirchi Love
+#EXTINF:-1 group-title="M" tvg-logo="https://qaatwar.github.io/bollywood-radio/cover.jpg",Mirchi Love
 https://drive.uber.radio/uber/bollywoodlove/icecast.audio
-#EXTINF:-1 group-title="M",Mixify 90's Hits
+#EXTINF:-1 group-title="M" tvg-logo="https://qaatwar.github.io/bollywood-radio/cover.jpg",Mixify 90's Hits
 https://server.mixify.in/listen/listen/radio.mp3
-#EXTINF:-1 group-title="M",Mixify Hindi Hits
+#EXTINF:-1 group-title="M" tvg-logo="https://qaatwar.github.io/bollywood-radio/cover.jpg",Mixify Hindi Hits
 https://server.mixify.in/listen/new_hits/radio.mp3
-#EXTINF:-1 group-title="M",Mohammed Aziz Radio
+#EXTINF:-1 group-title="M" tvg-logo="https://qaatwar.github.io/bollywood-radio/cover.jpg",Mohammed Aziz Radio
 https://stream.zeno.fm/p5ny63td1d0uv
-#EXTINF:-1 group-title="M",My Club Remix
+#EXTINF:-1 group-title="M" tvg-logo="https://qaatwar.github.io/bollywood-radio/cover.jpg",My Club Remix
 http://stream.zeno.fm/u7eee0hyzp8uv
-#EXTINF:-1 group-title="R",Radio 24
+#EXTINF:-1 group-title="R" tvg-logo="https://qaatwar.github.io/bollywood-radio/cover.jpg",Radio 24
 https://s7.everestcast.com:1155/stream
-#EXTINF:-1 group-title="R",Radio BollyFM
+#EXTINF:-1 group-title="R" tvg-logo="https://qaatwar.github.io/bollywood-radio/cover.jpg",Radio BollyFM
 http://stream.radiobollyfm.in:8201/hd
-#EXTINF:-1 group-title="R",Radio City 91.1
+#EXTINF:-1 group-title="R" tvg-logo="https://qaatwar.github.io/bollywood-radio/cover.jpg",Radio City 91.1
 https://stream-177.zeno.fm/pxc55r5uyc9uv
-#EXTINF:-1 group-title="R",Radio Evergreen FM
+#EXTINF:-1 group-title="R" tvg-logo="https://qaatwar.github.io/bollywood-radio/cover.jpg",Radio Evergreen FM
 https://server.mixify.in:8010/radio.mp3
-#EXTINF:-1 group-title="R",Radio Gaana
+#EXTINF:-1 group-title="R" tvg-logo="https://qaatwar.github.io/bollywood-radio/cover.jpg",Radio Gaana
 https://sp14.instainternet.com/8044/stream
-#EXTINF:-1 group-title="R",Radio Hungama 90s
+#EXTINF:-1 group-title="R" tvg-logo="https://qaatwar.github.io/bollywood-radio/cover.jpg",Radio Hungama 90s
 https://stream.zeno.fm/rm4i9pdex3cuv
-#EXTINF:-1 group-title="R",Radio Hungama Bollywood Dil Se
+#EXTINF:-1 group-title="R" tvg-logo="https://qaatwar.github.io/bollywood-radio/cover.jpg",Radio Hungama Bollywood Dil Se
 https://stream.zeno.fm/143d7gty24zuv
-#EXTINF:-1 group-title="R",Radio Mirchi Hindi
+#EXTINF:-1 group-title="R" tvg-logo="https://qaatwar.github.io/bollywood-radio/cover.jpg",Radio Mirchi Hindi
 https://eu8.fastcast4u.com/proxy/clyedupq/stream
-#EXTINF:-1 group-title="R",Radio Mirchi Masti
+#EXTINF:-1 group-title="R" tvg-logo="https://qaatwar.github.io/bollywood-radio/cover.jpg",Radio Mirchi Masti
 http://162.244.80.118:9460/stream.mp3
-#EXTINF:-1 group-title="R",Radio Namkin
+#EXTINF:-1 group-title="R" tvg-logo="https://qaatwar.github.io/bollywood-radio/cover.jpg",Radio Namkin
 http://namkeen.riggrodigital.com:8888/stream
-#EXTINF:-1 group-title="R",Radio Nasha 107.2
+#EXTINF:-1 group-title="R" tvg-logo="https://qaatwar.github.io/bollywood-radio/cover.jpg",Radio Nasha 107.2
 https://stream.zeno.fm/0r0xa792kwzuv
-#EXTINF:-1 group-title="R",Radio Retro
+#EXTINF:-1 group-title="R" tvg-logo="https://qaatwar.github.io/bollywood-radio/cover.jpg",Radio Retro
 https://stream.zeno.fm/g372rxef798uv
-#EXTINF:-1 group-title="R",Radio Retro Bollywood 90s
+#EXTINF:-1 group-title="R" tvg-logo="https://qaatwar.github.io/bollywood-radio/cover.jpg",Radio Retro Bollywood 90s
 https://stream-143.zeno.fm/fdgs82xkzhhvv
-#EXTINF:-1 group-title="R",Red FM 93.5
+#EXTINF:-1 group-title="R" tvg-logo="https://qaatwar.github.io/bollywood-radio/cover.jpg",Red FM 93.5
 https://stream.zeno.fm/9phrkb1e3v8uv
-#EXTINF:-1 group-title="S",Sunrise Radio UK
+#EXTINF:-1 group-title="S" tvg-logo="https://qaatwar.github.io/bollywood-radio/cover.jpg",Sunrise Radio UK
 https://listen-sunriseradio.sharp-stream.com/sunriseradio.mp3
-#EXTINF:-1 group-title="V",Vividh Bharati
+#EXTINF:-1 group-title="V" tvg-logo="https://qaatwar.github.io/bollywood-radio/cover.jpg",Vividh Bharati
 https://air.pc.cdn.bitgravity.com/air/live/pbaudio001/playlist.m3u8
