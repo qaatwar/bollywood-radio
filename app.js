@@ -22,7 +22,7 @@ function render() {
     element('favourite').setAttribute('aria-pressed', String(marked));
     element('favourite').setAttribute('aria-label', marked ? 'Remove from favourites' : 'Add to favourites');
   }
-  element('play').textContent = wanted ? 'Ⅱ' : '▶';
+  element('play').dataset.playing = String(wanted);
   element('play').setAttribute('aria-label', wanted ? 'Pause' : 'Play');
   const list = element('list');
   list.replaceChildren();
@@ -184,5 +184,5 @@ fetch('bollywood-radio.m3u', { cache: 'no-cache' }).then(response => {
   render();
 }).catch(() => {
   element('title').textContent = 'Station list unavailable';
-  element('status').textContent = 'Please reload in a moment.';
+  element('status').textContent = location.protocol === 'file:' ? 'Open the GitHub Pages website to load stations.' : 'Please reload in a moment.';
 });
