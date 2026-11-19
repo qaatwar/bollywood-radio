@@ -1,12 +1,46 @@
 <!doctype html>
 <html lang="en">
+<head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <meta name="theme-color" content="#240a16">
-<meta name="description" content="Bollywood Radio. Stations for Music Lovers.">
-<title>Bollywood Radio</title>
+<meta name="description" content="Listen to Bollywood and Hindi radio stations online. Browse live streams, save favourites and set a sleep timer on mobile or desktop. No signup needed.">
+<title>Bollywood Radio — Listen to Hindi Radio Online</title>
+<link rel="canonical" href="https://qaatwar.github.io/bollywood-radio/">
+<meta name="robots" content="index,follow,max-image-preview:large">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="en_US">
+<meta property="og:site_name" content="Bollywood Radio">
+<meta property="og:title" content="Bollywood Radio — Stations for Music Lovers">
+<meta property="og:description" content="Listen to Bollywood and Hindi radio online. Find a station, save your favourites and enjoy live music on mobile or desktop.">
+<meta property="og:url" content="https://qaatwar.github.io/bollywood-radio/">
+<meta property="og:image" content="https://qaatwar.github.io/bollywood-radio/cover.jpg">
+<meta property="og:image:width" content="1280">
+<meta property="og:image:height" content="640">
+<meta property="og:image:alt" content="Bollywood Radio — Stations for Music Lovers">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Bollywood Radio — Stations for Music Lovers">
+<meta name="twitter:description" content="Listen to Bollywood and Hindi radio online, with favourites and a sleep timer.">
+<meta name="twitter:image" content="https://qaatwar.github.io/bollywood-radio/cover.jpg">
+<meta name="twitter:image:alt" content="Bollywood Radio — Stations for Music Lovers">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebApplication",
+  "name": "Bollywood Radio",
+  "url": "https://qaatwar.github.io/bollywood-radio/",
+  "description": "A browser-based player for Bollywood and Hindi radio stations, with favourites and a sleep timer.",
+  "applicationCategory": "MultimediaApplication",
+  "operatingSystem": "Any",
+  "browserRequirements": "Requires JavaScript and an internet connection.",
+  "image": "https://qaatwar.github.io/bollywood-radio/cover.jpg",
+  "creator": { "@type": "Person", "name": "K.a.R.a.N" },
+  "offers": { "@type": "Offer", "price": "0", "priceCurrency": "USD" }
+}
+</script>
 <link rel="icon" type="image/svg+xml" href="favicon.svg">
 <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@600;700&family=DM+Sans:wght@400;500;600&display=swap" rel="stylesheet">
 <style>
 :root{color-scheme:dark;--gold:#f8d68a;--muted:#c9a9ae;--line:#ffffff20}
@@ -42,7 +76,10 @@ body{min-height:100vh;min-height:100dvh;display:flex;flex-direction:column;justi
 main,footer{margin:0 auto;flex-shrink:0}
 .cover{max-height:clamp(140px,calc(100dvh - 370px),420px)}
 .content{max-width:680px;margin:auto}
-#title{overflow-wrap:anywhere}
+#title{overflow-wrap:anywhere;font:600 clamp(22px,3vw,32px)/1.2 'DM Sans',sans-serif;letter-spacing:-.025em;margin:2px 0 6px}
+.site-heading{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip-path:inset(50%);white-space:nowrap}
+.site-description{max-width:540px;margin:0 auto 10px;font-size:14px;line-height:1.5;color:var(--muted)}
+.script-notice{max-width:540px;margin:12px auto;padding:0 20px;text-align:center}
 footer{padding:16px 20px 0}
 #timer:empty{display:none}
 @media(max-width:540px){
@@ -51,6 +88,7 @@ main{padding:0;max-width:440px}
 .cover{width:100%;max-height:260px}
 .content{padding:10px 4px 0}
 h1{font-size:clamp(21px,6vw,27px);line-height:1.25}
+#title{font-size:clamp(21px,6vw,27px);line-height:1.25}
 .controls{display:grid;grid-template-columns:1fr 64px 1fr 44px;gap:8px;max-width:360px;margin:auto}
 .controls button{padding:10px 8px;min-height:44px}
 .controls .play{width:64px;height:64px}
@@ -64,17 +102,22 @@ footer{padding-top:22px}
 }
 @media(max-height:650px){body{padding-top:12px;padding-bottom:12px}.cover{max-height:180px;width:auto;max-width:100%}.content{padding-top:0}#status{margin-bottom:8px}.station-picker{margin-top:10px}.secondary{margin-top:10px;gap:8px}footer{padding-top:12px}}
 </style>
+</head>
+<body>
 <main><section class="player" aria-label="Radio player">
-<img class="cover" src="cover.jpg" alt="Bollywood Radio — Stations for Music Lovers">
-<div class="content"><h1 id="title">Loading stations…</h1>
+<h1 class="site-heading">Bollywood Radio — Listen to Hindi Radio Online</h1>
+<img class="cover" src="cover.jpg" alt="Bollywood Radio — Stations for Music Lovers" width="1280" height="640" fetchpriority="high" decoding="async">
+<div class="content"><h2 id="title">Choose a radio station</h2>
 <p id="status" role="status" aria-live="polite">Getting your station list</p>
 <div class="controls"><button id="previous" aria-label="Previous station">Previous</button><button class="play" id="play" aria-label="Play" data-playing="false"><span class="play-icon" aria-hidden="true"></span></button><button id="next" aria-label="Next station">Next</button><button id="favourite" aria-label="Add to favourites" aria-pressed="false">♡</button></div>
 <div class="station-picker"><button id="browse" aria-haspopup="dialog" aria-controls="drawer">Stations ☰</button></div>
 <div class="secondary"><label class="volume">Volume <input id="volume" type="range" min="0" max="1" step=".01" value=".8"></label><label>Sleep timer <select id="sleep"><option value="0">Off</option><option value="15">15 minutes</option><option value="30">30 minutes</option><option value="60">60 minutes</option><option value="90">90 minutes</option></select></label><span id="timer" class="note"></span></div>
 </div></section></main>
-<footer>Created by <strong>K.a.R.a.N</strong></footer>
+<footer><p class="site-description">Listen to Bollywood and Hindi radio online. Browse stations, save favourites and set a sleep timer. Free to use on mobile and desktop, with no signup.</p>Created by <strong>K.a.R.a.N</strong></footer>
+<noscript><p class="script-notice">Enable JavaScript to browse stations and play live radio.</p></noscript>
 <dialog id="drawer"><div class="heading"><h2>Find your station</h2><button id="close" aria-label="Close station list">✕</button></div><div class="filters"><input id="search" type="search" placeholder="Search stations" aria-label="Search stations"><button id="only" aria-pressed="false">Favourites</button></div><p class="note">Stations that fail to play are skipped for this visit.</p><div id="list"></div></dialog>
 <audio id="audio" preload="none"></audio>
 <script src="https://cdn.jsdelivr.net/npm/hls.js@1.6.13/dist/hls.min.js"></script>
 <script src="app.js"></script>
+</body>
 </html>
