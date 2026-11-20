@@ -1,0 +1,15 @@
+{
+  "id": "./",
+  "name": "Bollywood Radio",
+  "short_name": "Bollywood Radio",
+  "start_url": "./",
+  "scope": "./",
+  "display": "standalone",
+  "background_color": "#210513",
+  "theme_color": "#210513",
+  "description": "Stations for Music Lovers",
+  "icons": [
+    { "src": "icon-192.png", "sizes": "192x192", "type": "image/png", "purpose": "any" },
+    { "src": "icon-512.png", "sizes": "512x512", "type": "image/png", "purpose": "any" }
+  ]
+}
