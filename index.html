@@ -79,6 +79,7 @@ main,footer{margin:0 auto;flex-shrink:0}
 #title{overflow-wrap:anywhere;font:600 clamp(22px,3vw,32px)/1.2 'DM Sans',sans-serif;letter-spacing:-.025em;margin:2px 0 6px}
 .site-heading{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip-path:inset(50%);white-space:nowrap}
 .site-description{max-width:540px;margin:0 auto 10px;font-size:14px;line-height:1.5;color:var(--muted)}
+.disclaimer{max-width:680px;margin:10px auto 0;font-size:clamp(.75rem,.7rem + .2vw,.8125rem);line-height:1.6;color:#c9a9ae;text-wrap:pretty;overflow-wrap:break-word}
 .script-notice{max-width:540px;margin:12px auto;padding:0 20px;text-align:center}
 footer{padding:16px 20px 0}
 #timer:empty{display:none}
@@ -113,7 +114,7 @@ footer{padding-top:22px}
 <div class="station-picker"><button id="browse" aria-haspopup="dialog" aria-controls="drawer">Stations ☰</button></div>
 <div class="secondary"><label class="volume">Volume <input id="volume" type="range" min="0" max="1" step=".01" value=".8"></label><label>Sleep timer <select id="sleep"><option value="0">Off</option><option value="15">15 minutes</option><option value="30">30 minutes</option><option value="60">60 minutes</option><option value="90">90 minutes</option></select></label><span id="timer" class="note"></span></div>
 </div></section></main>
-<footer><p class="site-description">Listen to Bollywood and Hindi radio online. Browse stations, save favourites and set a sleep timer. Free to use on mobile and desktop, with no signup.</p>Created by <strong>K.a.R.a.N</strong></footer>
+<footer><p class="site-description">Listen to Bollywood and Hindi radio online. Browse stations, save favourites and set a sleep timer. Free to use on mobile and desktop, with no signup.</p>Created by <strong>K.a.R.a.N</strong><p class="disclaimer">A personal, non-commercial project. Radio streams are provided by third-party stations. All broadcasts, music and trademarks belong to their respective owners. This project is independently created and is not affiliated with or endorsed by the listed stations.</p></footer>
 <noscript><p class="script-notice">Enable JavaScript to browse stations and play live radio.</p></noscript>
 <dialog id="drawer"><div class="heading"><h2>Find your station</h2><button id="close" aria-label="Close station list">✕</button></div><div class="filters"><input id="search" type="search" placeholder="Search stations" aria-label="Search stations"><button id="only" aria-pressed="false">Favourites</button></div><p class="note">Stations that fail to play are skipped for this visit.</p><div id="list"></div></dialog>
 <audio id="audio" preload="none"></audio>
