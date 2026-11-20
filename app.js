@@ -20,7 +20,7 @@ let category = 'all';
 let playing = false;
 function showTrack(title, artist = '') {
   if (!wanted || !title) return;
-  element('track').textContent = [artist, title].filter(Boolean).join(' — ');
+  element('track').textContent = 'Now playing · ' + [artist, title].filter(Boolean).join(' — ');
   element('track').hidden = false;
   document.title = title + ' • ' + stations[current].name;
   if ('mediaSession' in navigator && window.MediaMetadata) {
@@ -95,7 +95,8 @@ function render() {
     button.textContent = item.name;
     const badge = document.createElement('small');
     badge.className = 'station-status';
-    badge.textContent = unavailable(item.url) ? 'Temporarily unavailable' : index === current && playing ? 'Playing on this device' : '';
+    badge.dataset.state = unavailable(item.url) ? 'failed' : index === current && playing ? 'playing' : 'unknown';
+    badge.textContent = unavailable(item.url) ? 'Temporarily unavailable' : index === current && playing ? 'Playing on this device' : 'Not currently verified';
     button.append(badge);
     if (index === current) button.className = 'active';
     button.onclick = () => { element('drawer').close(); start(index); };
@@ -197,6 +198,7 @@ async function start(index, attempt = 0) {
     if (token !== sequence || !wanted) return;
     playing = false;
     element('status').textContent = 'Buffering…';
+    render();
     clearTimeout(deadline);
     deadline = setTimeout(() => skip(token), 15000);
   };
